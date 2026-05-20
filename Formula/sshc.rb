@@ -1,25 +1,25 @@
 class Sshc < Formula
   desc "Minimal TUI for managing and connecting to SSH hosts defined in ~/.ssh/config"
   homepage "https://github.com/hang-in/sshc"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-aarch64-apple-darwin.tar.xz"
-      sha256 "5ac43eac036fbf5d159d05fb1188c6b2dd8b1bf00e774cf320df7d59d1f0f651"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.1/sshc-aarch64-apple-darwin.tar.xz"
+      sha256 "0c1022443579e1a459c08c0b5990cf64c25cdb38bfa3964c052ffed62b716e93"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-x86_64-apple-darwin.tar.xz"
-      sha256 "cbfa425f3103b6102211b3d069e66054820779f023c4992565b8fcd9f4abb843"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.1/sshc-x86_64-apple-darwin.tar.xz"
+      sha256 "4ff9cf0f924dbe0bee52b458eb34c710633bd6ffb7f71cd5a49a040f7380bbaf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f2bd6690442aec93f2daf5e792cc25262e189046f94b2300eb22e2fcc8043eb8"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.1/sshc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9e9be253a390dbe90cd7eeba4b8a2b9d3642e90cbf964c2d2e6c504447a5028c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b701d836474774570203d820309ed9a55d1b996b0e65d39ed5bc08319ba98b2d"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.1/sshc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ee88c6cd2dda56815cb47f128b01f64a5836e5f2bc667852c85883d25a4313a8"
     end
   end
   license "MIT"
