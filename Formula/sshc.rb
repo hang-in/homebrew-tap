@@ -25,11 +25,11 @@ class Sshc < Formula
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
@@ -47,18 +47,10 @@ class Sshc < Formula
   end
 
   def install
-    if OS.mac? && Hardware::CPU.arm?
-      bin.install "sshc"
-    end
-    if OS.mac? && Hardware::CPU.intel?
-      bin.install "sshc"
-    end
-    if OS.linux? && Hardware::CPU.arm?
-      bin.install "sshc"
-    end
-    if OS.linux? && Hardware::CPU.intel?
-      bin.install "sshc"
-    end
+    bin.install "sshc" if OS.mac? && Hardware::CPU.arm?
+    bin.install "sshc" if OS.mac? && Hardware::CPU.intel?
+    bin.install "sshc" if OS.linux? && Hardware::CPU.arm?
+    bin.install "sshc" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
