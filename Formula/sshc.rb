@@ -1,25 +1,25 @@
 class Sshc < Formula
   desc "Minimal TUI for managing and connecting to SSH hosts defined in ~/.ssh/config"
   homepage "https://github.com/hang-in/sshc"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/sshc/releases/download/v0.6.0/sshc-aarch64-apple-darwin.tar.xz"
-      sha256 "375b51386dcbec335ec30c831b7ce9607f5afe80a3395607205f4e1fc6d90669"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-aarch64-apple-darwin.tar.xz"
+      sha256 "5ac43eac036fbf5d159d05fb1188c6b2dd8b1bf00e774cf320df7d59d1f0f651"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/sshc/releases/download/v0.6.0/sshc-x86_64-apple-darwin.tar.xz"
-      sha256 "a64dab69ede21b86dbd32818039c705692561ee647f4ee74da8ce550773a7c6f"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-x86_64-apple-darwin.tar.xz"
+      sha256 "cbfa425f3103b6102211b3d069e66054820779f023c4992565b8fcd9f4abb843"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/sshc/releases/download/v0.6.0/sshc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7304dc43a3fa0ed1ac2263a0b12f0d9caa2cc54a77ada78f9cd282af3a36f69b"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f2bd6690442aec93f2daf5e792cc25262e189046f94b2300eb22e2fcc8043eb8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/sshc/releases/download/v0.6.0/sshc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "81f035b52087d8db4aeba9ea20709f6a12bb528357f3522526eb099eb4333053"
+      url "https://github.com/hang-in/sshc/releases/download/v0.7.0/sshc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b701d836474774570203d820309ed9a55d1b996b0e65d39ed5bc08319ba98b2d"
     end
   end
   license "MIT"
@@ -28,6 +28,7 @@ class Sshc < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
