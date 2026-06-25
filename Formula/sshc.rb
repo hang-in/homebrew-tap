@@ -1,31 +1,32 @@
 class Sshc < Formula
   desc "Minimal TUI for managing and connecting to SSH hosts defined in ~/.ssh/config"
   homepage "https://github.com/hang-in/sshc"
-  version "0.8.4"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/sshc/releases/download/v0.8.4/sshc-aarch64-apple-darwin.tar.xz"
-      sha256 "6a9deef16b575a97d7702ca26625c47e47ebb020b4a130b60a0af624ccec4e09"
+      url "https://github.com/hang-in/sshc/releases/download/v0.9.0/sshc-aarch64-apple-darwin.tar.xz"
+      sha256 "a74291f8f39656c48584b04c0df392414fd0a2a9849efda999090f00bf265f16"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/sshc/releases/download/v0.8.4/sshc-x86_64-apple-darwin.tar.xz"
-      sha256 "efcb734698e0b4159f159287d5d255ac05f5a7347da9d19e535e5e65d0098c76"
+      url "https://github.com/hang-in/sshc/releases/download/v0.9.0/sshc-x86_64-apple-darwin.tar.xz"
+      sha256 "8cedba9d2081972ba70c46f50a8fce41055a2e64162c077162aeb9907981a423"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/sshc/releases/download/v0.8.4/sshc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "da84fc802aca762bb900ea89bfc5eb140280edb6729072a38f95be0f4b13d6a6"
+      url "https://github.com/hang-in/sshc/releases/download/v0.9.0/sshc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0c50bb360965ffa3b65be3f487fc59480cf5191450f50189de5d32ca2739cced"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/sshc/releases/download/v0.8.4/sshc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a70732e5cd0e9751e2df7abfaca25dbbf76f612e07faeab10e7b30d1c2160790"
+      url "https://github.com/hang-in/sshc/releases/download/v0.9.0/sshc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d312760c628aaac05eaa9954e1bf7a51adfc2205a711ae6960649fd6671f5aa0"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
+    "aarch64-pc-windows-gnu":    {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
     "x86_64-pc-windows-gnu":     {},
