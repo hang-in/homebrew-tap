@@ -1,20 +1,20 @@
 class Tunaround < Formula
   desc "터미널에서 사람이 운전하는 역할 부여 2-에이전트 착수 전 설계 토론 도구"
   homepage "https://github.com/hang-in/tunaRound"
-  version "0.2.1"
+  version "0.2.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/tunaRound/releases/download/v0.2.1/tunaround-aarch64-apple-darwin.tar.xz"
-      sha256 "7efb3222dadb19bd038d3c9129853dce39afdeeb2760777d2f2cb73c5faf1fef"
+      url "https://github.com/hang-in/tunaRound/releases/download/v0.2.2/tunaround-aarch64-apple-darwin.tar.xz"
+      sha256 "1eb122a8f951b3b586fef07e8388e7082844f6169d79b23392cbb70757c32877"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/tunaRound/releases/download/v0.2.1/tunaround-x86_64-apple-darwin.tar.xz"
-      sha256 "c4beeba5711f7ae2be382c87120eb6143757ff4afcdc3cdf163f9cb4712a29cb"
+      url "https://github.com/hang-in/tunaRound/releases/download/v0.2.2/tunaround-x86_64-apple-darwin.tar.xz"
+      sha256 "5aceb5259261bb50c9dc9b74ffa41a1089743970ce273d2e9215e6af0fcb7b55"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hang-in/tunaRound/releases/download/v0.2.1/tunaround-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "0f4fd1053822742262f2091460295bb00c291b96788a0d86770632c88c68685d"
+    url "https://github.com/hang-in/tunaRound/releases/download/v0.2.2/tunaround-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "786fcbb6ddcf3a206b4f1a0e5d6bbd599577690c520da53a3ab82f97d6f14a23"
   end
   license "AGPL-3.0-only"
 
