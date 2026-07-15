@@ -1,20 +1,20 @@
 class Tunaround < Formula
   desc "로컬·LAN의 터미널 에이전트 세션을 토론·검색·A2A 작업 위임으로 묶는 사용자 주도 오케스트레이터(개인 도구)"
   homepage "https://github.com/hang-in/tunaRound"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hang-in/tunaRound/releases/download/v0.4.0/tunaround-aarch64-apple-darwin.tar.xz"
-      sha256 "37ab46ed4b11e4194cb8604b87a0e27f1d517043a300d219e61d7d9d0fe693f0"
+      url "https://github.com/hang-in/tunaRound/releases/download/v0.5.0/tunaround-aarch64-apple-darwin.tar.xz"
+      sha256 "9d8b011637a9f149b03f9802d09c955d8b8f19f80926da7bf966ca14b7c5e7a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hang-in/tunaRound/releases/download/v0.4.0/tunaround-x86_64-apple-darwin.tar.xz"
-      sha256 "c6d0f1c568ee56bda181065178a017080c908f8e54493f51e848845d171fa8d0"
+      url "https://github.com/hang-in/tunaRound/releases/download/v0.5.0/tunaround-x86_64-apple-darwin.tar.xz"
+      sha256 "63e0c65e6a2a45f319c82de2923ee0b384e0f474b7d9ed17bb7edf4589be024d"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hang-in/tunaRound/releases/download/v0.4.0/tunaround-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "d19f48a9676531f92ee8729cde70dffb8959acf89f9881b151aa91b84a851391"
+    url "https://github.com/hang-in/tunaRound/releases/download/v0.5.0/tunaround-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "5bace4f3be9c49b7775da10a498426389c532442fdc1d1df6b57d0957233cc70"
   end
   license "AGPL-3.0-only"
 
